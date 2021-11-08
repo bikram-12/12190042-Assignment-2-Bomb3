@@ -70,10 +70,6 @@ End of assembler dump.
 
 From here we can visualize that the register $rsp stores the first input and $rsp+4 stores the second input.
 Where we even predict that our input should be in range of between 2 to 14.
-
-
-We have to compare %eax from <func4>. Lets see whats going on in <func4>
-result = %rax, ecx = t1; first input = %edi, edx is 14 when passed in, %esi = 0
 (gdb) disas
 Dump of assembler code for function phase_4:
    0x0000000000400ffa <+0>:	sub    $0x18,%rsp
